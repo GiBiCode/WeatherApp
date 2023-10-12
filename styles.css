@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-origin: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-image: url("https://cdn.pixabay.com/photo/2016/09/29/13/08/planet-1702788_1280.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  margin: 10px;
+  padding-top: 150px
+}
+
+.title {
+  font-size: 1.5rem; 
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 10px;
+}
+
+/* form {
+  margin: 0 20px; 
+} */
+
+.containerWeather {
+  display: flex;
+  text-align: center;
+  background: #040130b2;  
+  flex-direction: column;
+  width: 50%;
+  border-radius: 30px;
+  color: #fff;
+  padding-bottom: 20px;
+  min-height: 150px;
+  /* margin-top: 250px; */
+
+}
+
+#search-result {
+  flex-grow: 1;
+}
+/* Estilos para el botón de obtener clima */
+input {
+  background-color: #fff;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 1rem;
+  min-width: 200px;
+  color: #575757;
+  transition: 0.2s;
+}
+
+/*Botón*/
+
+:root {
+  --gradient: linear-gradient(to bottom, #140a97, #010024); 
+}
+
+#search-button {
+  background: var(--gradient); 
+  color: white;
+  padding: 10px 20px; 
+  border: none;
+  border-radius: 20px;
+  cursor: pointer; 
+  transition: background 0.3s, color 0.3s; 
+  margin-top: 20px;
+}
+
+#search-button:hover {
+  background: var(--gradient); 
+  color: #fff; 
+}
+
+.temperature {
+  font-size: 3rem; 
+  font-weight: bold; 
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 10px; 
+  justify-content: center;
+}
+
+.weather-data {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 20px;
+  overflow: hidden;
+  transition: height 0.1s ease;
+}
+
+.weather-details {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 400px;
+  text-align: left;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.weather-icon {
+  margin-right: 10px; 
+  width: 100px;
+}
+
+
+.feels-like,
+.humidity,
+.visibility {
+  text-align: center;
+  width: 33%
+}
+
+.weather-item {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-bottom: 20px; 
+  
+}
+
+.weather-title,
+.weather-value {
+  margin: 0;
+}
+
+#weather-forecast{
+  display: inline-block;
+  justify-content: center; /* Espacio uniforme entre elementos */
+  flex-wrap: wrap; 
+  margin-top: 20px;
+  
+}
+.daily {
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  margin: 5px; /* Márgenes para  separar los elementos del .daily */
+  /*padding: 5px;  */
+  font-size: 12px; 
+  align-items: stretch
+}
+
+.location {
+  display: flex;
+  align-items: center; 
+  margin-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+  
+}
+
+.location i {
+  margin-left: 25px; 
+  margin-right: 10px;
+}
+
+.description {
+  display: flex;
+  align-items: left; 
+  text-align: left;
+  font-weight: bold;
+  font-size: 18px;
+  padding-bottom: 5px;
+
+}
+.line {
+  height: 1px;
+  background: white;
+  width: 0%;
+  transition: width 0.5s ease-in-out;
+}
+
+.forecast.loaded .line {
+  width: 100%;
+}
+/* #clock, #date {
+  margin-bottom: 5px;
+  text-align: center;
+} */
